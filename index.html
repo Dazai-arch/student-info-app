@@ -1,32 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Student Information System</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <div class="container">
-    <h1>Student Management System - MCA</h1>
-    <div class="info">
-      <p><strong>Name:</strong> John</p>
-      <p><strong>Register Number:</strong> 101</p>
-      <p><strong>Programme:</strong> MCA</p>
-    </div>
-    <button id="showDetailsBtn">Show Details</button>
-    <p id="detailsOutput"></p>
-  </div>
-
-  <div class="container">
     <h1>Student Information System</h1>
-    <div class="info">
-      <p><strong>Name:</strong> John</p>
-      <p><strong>Register Number:</strong> 101</p>
-      <p><strong>Programme:</strong> MCA</p>
-    </div>
 
     <div class="contact">
       <h2>Contact Information</h2>
@@ -34,11 +16,26 @@
       <p><strong>Phone:</strong> +91 98765 43210</p>
     </div>
 
+    <div class="form-group">
+      <label for="nameInput">Name</label>
+      <input type="text" id="nameInput" placeholder="Enter your name" />
+    </div>
+
+    <div class="form-group">
+      <label for="regInput">Register Number</label>
+      <input type="text" id="regInput" placeholder="Enter register number" />
+    </div>
+
+    <div class="form-group">
+      <label for="programmeInput">Programme</label>
+      <input type="text" id="programmeInput" placeholder="Enter programme" />
+    </div>
+
     <button id="showDetailsBtn">Show Details</button>
-    <p id="detailsOutput"></p>
+
+    <div id="detailsOutput" class="details-output"></div>
   </div>
 
   <script src="script.js"></script>
 </body>
-
 </html>
